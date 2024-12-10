@@ -79,7 +79,6 @@ resource "aws_lambda_function" "cloudflare-restrictor" {
   lifecycle {
     ignore_changes = [
       filename,
-      last_modified,
     ]
   }
 }

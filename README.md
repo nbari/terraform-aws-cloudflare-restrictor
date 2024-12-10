@@ -66,7 +66,6 @@ allowed_ports = [80, 443]
 |------|-------------|------|---------|:--------:|
 | allowed\_ports | Ports to allow traffic from CloudFlare on (recommended to only use 443) | `list(number)` | <pre>[<br>  443<br>]</pre> | no |
 | execution\_expression | cron expression for how frequently rules should be updated | `string` | `"rate(1 day)"` | no |
-| name | Moniker to apply to all resources in the module | `string` | `"cloudflare-restrictor"` | no |
 | tag\_key | Tag key to expect on security groups that will be managed by this module | `string` | `"CLOUDFLARE_MANAGED"` | no |
 | tag\_value | Tag value to expect on security groups that will be managed by this module | `string` | `"true"` | no |
 
